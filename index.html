@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-builder">
+        <h1>Create Your Professional Resume</h1>
+        <form id="resumeForm">
+            <section class="form-section">
+                <h2>Personal Information</h2>
+                <input type="text" placeholder="Full Name" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="tel" placeholder="Phone Number" name="phone" required>
+                <input type="text" placeholder="LinkedIn Profile" name="linkedin">
+                <textarea placeholder="Address" name="address" required></textarea>
+            </section>
+
+            <section class="form-section">
+                <h2>Education</h2>
+                <button type="button" class="add-btn" onclick="addEducation()">+ Add Education</button>
+                <div id="education-container"></div>
+            </section>
+
+            <section class="form-section">
+                <h2>Work Experience</h2>
+                <button type="button" class="add-btn" onclick="addExperience()">+ Add Experience</button>
+                <div id="experience-container"></div>
+            </section>
+
+            <section class="form-section">
+                <h2>Skills</h2>
+                <textarea placeholder="List your skills here..." name="skills" required></textarea>
+            </section>
+
+            <section class="form-section">
+                <h2>Certifications</h2>
+                <button type="button" class="add-btn" onclick="addCertification()">+ Add Certification</button>
+                <div id="certification-container"></div>
+            </section>
+
+            <section class="form-section">
+                <h2>Languages</h2>
+                <button type="button" class="add-btn" onclick="addLanguage()">+ Add Language</button>
+                <div id="language-container"></div>
+            </section>
+
+            <section class="form-section">
+                <h2>References</h2>
+                <textarea placeholder="List references here..." name="references"></textarea>
+            </section>
+
+            <button type="submit" class="generate-btn">Generate PDF</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
